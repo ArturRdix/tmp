@@ -1,0 +1,119 @@
+.cooperations {
+  padding-bottom: 100px;
+
+  .brand {
+    margin-bottom: 100px;
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h3 {
+        font-family: 'gilroy';
+        font-size: 40px;
+        font-weight: 100;
+      }
+      p{
+        font-family: 'gilroy';
+        font-size: 16px;
+        font-weight: 100;
+      }
+    }
+    .right {
+      position: relative;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      p {
+        position: absolute;
+        right: 10px;
+        bottom: 20px;
+        width: 53%;
+        font-size: 15px;
+        font-family: 'gilroy';
+        font-weight: 100;
+      }
+    }
+
+  }
+
+  .left-side {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .left {
+      display: flex;
+      justify-content: flex-start;
+
+      img {
+        width: 80%;
+        height: auto;
+      }
+    }
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h3 {
+        font-family: 'gilroy';
+        font-size: 40px;
+        font-weight: 100;
+        text-transform: uppercase;
+      }
+      p{
+        font-family: 'gilroy';
+        font-size: 16px;
+        font-weight: 100;
+      }
+    }
+  }
+
+  .right-side {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .right {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        width: 80%;
+        height: auto;
+      }
+    }
+    .left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      a {
+        display: flex;
+        background: #ADA8A1;
+        color: #FFF;
+        font-family: 'gilroy';
+        font-weight: 100;
+        font-size: 14px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        height: 45px;
+        width: 200px;
+      }
+
+      h3 {
+        font-family: 'gilroy';
+        font-size: 40px;
+        font-weight: 100;
+        text-transform: uppercase;
+      }
+      p{
+        font-family: 'gilroy';
+        font-size: 16px;
+        font-weight: 100;
+      }
+    }
+  }
+}

@@ -1,0 +1,252 @@
+.our-company {
+  .about-head {
+    .left {
+      position: relative;
+      padding-right: 50px;
+
+      h1 {
+        position: absolute;
+        right: -319px;
+        top: -15px;
+        z-index: 444;
+        font-size: 80px;
+        color: rgba(173, 168, 161, 0.5);
+        font-family: "Heading";
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .right {
+      display: flex;
+      padding-left: 50px;
+
+      h2 {
+        font-family: 'gilroy';
+        font-weight: 100;
+        font-size: 40px;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 16px;
+        font-family: 'gilroy';
+        font-weight: 100;
+      }
+      .content {
+
+      }
+    }
+  }
+  .history {
+    margin-top: 100px;
+    .spoiler {
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+
+      &:first-of-type {
+        border-top: 1px solid #ccc;
+      }
+      &:last-of-type {
+        border-bottom: none;
+      }
+
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        cursor: pointer;
+
+        .year {
+          gap: 50px;
+
+          strong {
+            font-family: 'gilroy';
+            font-weight: 600;
+            font-size: 20px;
+            margin-top: -20px;
+          }
+
+          h3 {
+            width: 90%;
+            font-family: 'gilroy';
+            font-size: 40px;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .content {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+        p {
+          font-size: 16px;
+          font-family: 'gilroy';
+          font-weight: 300;
+        }
+      }
+
+      &.open .content {
+        height: auto;
+      }
+
+      button {
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
+  .advantages {
+    margin-top: 100px;
+
+    .left {
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+
+      p {
+        font-family: 'gilroy';
+        font-size: 16px;
+        font-weight: 100;
+      }
+    }
+    .right {
+      padding-left: 50px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+.banner-box {
+  height: 800px;
+  background: url("../img/three_left.png");
+  background-position: left center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+
+  .banner {
+    height: 500px;
+    width: 100%;
+    border-radius: 40px;
+    background: #787878;
+    overflow: hidden;
+
+    .l {
+      width: 50%;
+      height: inherit;
+      overflow: hidden;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+
+      img {
+        width: 100%;
+      }
+    }
+    .r {
+      width: 50%;
+      height: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        width: 72%;
+        font-size: 15px;
+        color: #FFF;
+        font-family: 'gilroy';
+        font-weight: 100;
+
+        strong {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+.development {
+  margin-bottom: 100px;
+  .ptr {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+  .item {
+    width: 100%;
+    height: 620px;
+
+    &>a {
+      display: flex;
+      background: $graybtn;
+      color: #FFF;
+      justify-content: center;
+      align-items: center;
+      gap: 70px;
+      padding: 15px;
+      width: max-content;
+      border-radius: 15px;
+      font-family: 'gilroy';
+      font-weight: 100;
+    }
+
+    .img {
+      width: 100%;
+      height: 350px;
+      overflow: hidden;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      border-radius: 30px;
+
+      img {
+        width: 100%;
+      }
+    }
+    .desc {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      width: 100%;
+      height: 196px;
+
+      p {
+        font-size: 24px;
+        font-family: 'gilroy';
+        font-weight: 500;
+      }
+      span {
+        font-size: 16px;
+        font-family: 'gilroy';
+        font-weight: 100;
+      }
+    }
+  }
+}

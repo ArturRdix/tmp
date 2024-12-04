@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opencart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+<nav class="container-fluid">
+    <div class="container">
+        <div class="menu full-w flex space-between align-center">
+            <a href="" class="logo"><img src="./img/icons/logo.svg" alt=""></a>
+            <a href="" class="catalog flex align-center"><img src="./img/icons/catalog.svg" alt=""> Каталог</a>
+            <div class="search"><input type="text" placeholder="Я шукаю">
+                <button><img src="./img/icons/linse.svg" alt=""></button>
+            </div>
+            <a href="" class="link">Про нас <img src="./img/icons/arrow_down.svg" alt=""></a>
+            <a href="" class="link">Оплата і доставка</a>
+            <a href="" class="link">Контакти</a>
+            <a href="" class="tel flex align-center link"><img src="./img/icons/phone.svg" alt=""> 063 123 45 67</a>
+            <a href="#" class="button link">Замовити консультацію</a>
+
+
+            <div class="soc flex align-center">
+                <a href="" class="telegram"><img src="./img/icons/telegram.svg" alt=""></a>
+                <a href="" class="instagram"><img src="./img/icons/instagram.svg" alt=""></a>
+            </div>
+
+            <a class="lang flex align-center"> <img src="./img/icons/lang_planet.svg" alt=""> UA <img
+                    src="./img/icons/arrow_down.svg" alt=""> </a>
+            <a href="" class="cart"> <img src="./img/icons/cart.svg" alt=""> <span class="count">0</span></a>
+
+            <a href="" class="mob-catalog flex align-center"><img src="./img/icons/catalog.svg" alt=""></a>
+        </div>
+    </div>
+</nav>
+
+
+<div class="catalog-container container-fluid">
+    <div class="container">
+        <div class="row breadcrumb-outer">
+            <div class="col-md-12">
+                <div class="breadcrumb-inner full-w flex align-center">
+                    <a href="">StarWood </a> / <a href=""> Столи з HPL</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 filter-side">
+
+                <div class="prod-menu">
+                    <div class="prod-menu-title" onclick="toggleMenu(this)">
+                        Столи з HPL
+                        <span class="arrow"><img src="./img/icons/arrow_down.svg" alt=""></span>
+                    </div>
+                    <ul class="prod-menu-list">
+                        <li><a href="#">Столи суцільні</a></li>
+                        <li><a href="#">Столи розкладні</a></li>
+                        <li><a href="#">Журнальні столи</a></li>
+                    </ul>
+                </div>
+
+                <div class="prod-menu">
+                    <div class="prod-menu-title" onclick="toggleMenu(this)">
+                        Столи з епоксидної смоли
+                        <span class="arrow"><img src="./img/icons/arrow_down.svg" alt=""></span>
+                    </div>
+                    <ul class="prod-menu-list">
+                        <li><a href="#">Столи суцільні</a></li>
+                        <li><a href="#">Столи розкладні</a></li>
+                        <li><a href="#">Журнальні столи</a></li>
+                    </ul>
+                </div>
+
+                <div class="prod-menu">
+                    <div class="prod-menu-title" onclick="toggleMenu(this)">
+                        Стільці
+                        <span class="arrow"><img src="./img/icons/arrow_down.svg" alt=""></span>
+                    </div>
+                    <ul class="prod-menu-list">
+                        <li><a href="#">Столи суцільні</a></li>
+                        <li><a href="#">Столи розкладні</a></li>
+                        <li><a href="#">Журнальні столи</a></li>
+                    </ul>
+                </div>
+
+                <div class="prod-menu">
+                    <div class="prod-menu-title" onclick="toggleMenu(this)">
+                        Колір стільниці
+                        <span class="arrow"><img src="./img/icons/arrow_down.svg" alt=""></span>
+                    </div>
+                    <ul class="prod-menu-list">
+                        <li class="check"> <label><input type="checkbox"> Коричневий</label> </li>
+                        <li class="check"> <label><input type="checkbox"> Дуб коричневий</label> </li>
+                        <li class="check"> <label><input type="checkbox"> Білий, коричневий</label> </li>
+                        <li class="check"> <label><input type="checkbox"> Коричневий, чорний</label> </li>
+                    </ul>
+                </div>
+
+                <div class="prod-menu">
+                    <div class="prod-menu-title" onclick="toggleMenu(this)">
+                        Матеріал підстілля
+                        <span class="arrow"><img src="./img/icons/arrow_down.svg" alt=""></span>
+                    </div>
+                    <ul class="prod-menu-list">
+                        <li class="check"> <label><input type="checkbox"> Дерево</label> </li>
+                        <li class="check"> <label><input type="checkbox"> Метал</label> </li>
+                        <li class="check"> <label><input type="checkbox"> Дерево та метал</label> </li>
+                        <li class="check"> <label><input type="checkbox"> Неіржавна сталь</label> </li>
+                    </ul>
+                </div>
+
+
+                <div class="prod-menu">
+                    <div class="prod-menu-title" onclick="toggleMenu(this)">
+                        Покриття підстілля
+                        <span class="arrow"><img src="./img/icons/arrow_down.svg" alt=""></span>
+                    </div>
+                    <ul class="prod-menu-list">
+                        <li class="check"> <label><input type="checkbox"> Поліуретановий лак</label> </li>
+                        <li class="check"> <label><input type="checkbox"> Порошкова фарба</label> </li>
+                        <li class="check"> <label><input type="checkbox"> Поліуретановий лак та порошкове покриття</label> </li>
+                        <li class="check"> <label><input type="checkbox"> Поліуретановий лак та порошкове покриття</label> </li>
+                        <li class="check"> <label><input type="checkbox"> Поліуретановий лак та порошкове покриття</label> </li>
+                    </ul>
+                </div>
+
+
+                <div class="prod-menu">
+                    <div class="prod-menu-title" onclick="toggleMenu(this)">
+                        Колір основи
+                        <span class="arrow"><img src="./img/icons/arrow_down.svg" alt=""></span>
+                    </div>
+                    <ul class="prod-menu-list">
+                        <li class="check"> <label><input type="checkbox"> Чорний</label> </li>
+                        <li class="check"> <label><input type="checkbox"> Білий</label> </li>
+                        <li class="check"> <label><input type="checkbox"> Золотий</label> </li>
+                        <li class="check"> <label><input type="checkbox"> Сірий</label> </li>
+                    </ul>
+                </div>
+
+                <div class="prod-menu">
+                    <div class="prod-menu-title" onclick="toggleMenu(this)">
+                        Форма стільниці
+                        <span class="arrow"><img src="./img/icons/arrow_down.svg" alt=""></span>
+                    </div>
+                    <ul class="prod-menu-list">
+                        <li class="check"> <label><input type="checkbox"> Кругла</label> </li>
+                        <li class="check"> <label><input type="checkbox"> Прямокутна</label> </li>
+                        <li class="check"> <label><input type="checkbox"> Овальна</label> </li>
+                    </ul>
+                </div>
+
+
+                <div class="prod-menu">
+                    <div class="prod-menu-title" onclick="toggleMenu(this)">
+                        Функціональність
+                        <span class="arrow"><img src="./img/icons/arrow_down.svg" alt=""></span>
+                    </div>
+                    <ul class="prod-menu-list">
+                        <li class="check"> <label><input type="checkbox"> Не розсувний</label> </li>
+                        <li class="check"> <label><input type="checkbox"> Розсувний</label> </li>
+                    </ul>
+                </div>
+
+                <div class="prod-menu">
+                    <div class="prod-menu-title" onclick="toggleMenu(this)">
+                        Розмір на фото (довжина
+                        *ширина * висота), мм
+                        <span class="arrow"><img src="./img/icons/arrow_down.svg" alt=""></span>
+                    </div>
+                    <ul class="prod-menu-list">
+                        <li class="check"> <label><input type="checkbox"> 1600*900*750</label> </li>
+                        <li class="check"> <label><input type="checkbox"> 1300*800*750</label> </li>
+                        <li class="check"> <label><input type="checkbox"> 1800*900*750</label> </li>
+                        <li class="check"> <label><input type="checkbox"> 2000*1000*750</label> </li>
+                    </ul>
+                </div>
+
+                <div class="prod-menu">
+                    <div class="prod-menu-title" onclick="toggleMenu(this)">
+                        Діаметр на фото, мм
+                        <span class="arrow"><img src="./img/icons/arrow_down.svg" alt=""></span>
+                    </div>
+                    <ul class="prod-menu-list">
+                        <li class="check"> <label><input type="checkbox"> 1100</label> </li>
+                        <li class="check"> <label><input type="checkbox"> 800</label> </li>
+                        <li class="check"> <label><input type="checkbox"> 900</label> </li>
+                        <li class="check"> <label><input type="checkbox"> 700</label> </li>
+                    </ul>
+                </div>
+
+                <div class="prod-menu">
+                    <div class="prod-menu-title" onclick="toggleMenu(this)">
+                        Розмір у розкладеному
+                        вигляді (довжина *
+                        ширина * висота) мм
+                        <span class="arrow"><img src="./img/icons/arrow_down.svg" alt=""></span>
+                    </div>
+                    <ul class="prod-menu-list">
+                        <li class="check"> <label><input type="checkbox"> 1300*900*750</label> </li>
+                        <li class="check"> <label><input type="checkbox"> 1650*850*750</label> </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class="col-md-9">
+                <div class="order-side flex full-w align-center">
+                    <div class="sort-dropdown">
+                        <button class="sort-btn" onclick="toggleSortMenu()">
+                            <span>Сортувати за</span>
+                            <img src="./img/icons/arrow_down.svg" alt="">
+                        </button>
+                        <div class="sort-options">
+                            <div class="sort-option" onclick="sortProducts('price-asc')">Цене: по возрастанию</div>
+                            <div class="sort-option" onclick="sortProducts('price-desc')">Цене: по убыванию</div>
+                            <div class="sort-option" onclick="sortProducts('name-asc')">Названию: А-Я</div>
+                            <div class="sort-option" onclick="sortProducts('name-desc')">Названию: Я-А</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items-box flex wrap full-w">
+
+                    <div class="item product-mini">
+                        <div class="img">
+                            <img src="./uploads/products/table1.png" alt="">
+                        </div>
+                        <div class="desc">
+                        <span>
+                            <p>Обідній овальний розкладний стіл з HPL</p>
+                            <span>11 499 ₴</span>
+                        </span>
+                        </div>
+                        <a href="" class="product-link" tabindex="0">перейти <img src="./img/icons/to_cart.svg" alt=""> </a>
+                    </div>
+                    <div class="item product-mini">
+                        <div class="img">
+                            <img src="./uploads/products/table1.png" alt="">
+                        </div>
+                        <div class="desc">
+                        <span>
+                            <p>Обідній овальний розкладний стіл з HPL</p>
+                            <span>11 499 ₴</span>
+                        </span>
+                        </div>
+                        <a href="" class="product-link" tabindex="0">перейти <img src="./img/icons/to_cart.svg" alt=""> </a>
+                    </div>
+                    <div class="item product-mini">
+                        <div class="img">
+                            <img src="./uploads/products/table1.png" alt="">
+                        </div>
+                        <div class="desc">
+                        <span>
+                            <p>Обідній овальний розкладний стіл з HPL</p>
+                            <span>11 499 ₴</span>
+                        </span>
+                        </div>
+                        <a href="" class="product-link" tabindex="0">перейти <img src="./img/icons/to_cart.svg" alt=""> </a>
+                    </div>
+                    <div class="item product-mini">
+                        <div class="img">
+                            <img src="./uploads/products/table1.png" alt="">
+                        </div>
+                        <div class="desc">
+                        <span>
+                            <p>Обідній овальний розкладний стіл з HPL</p>
+                            <span>11 499 ₴</span>
+                        </span>
+                        </div>
+                        <a href="" class="product-link" tabindex="0">перейти <img src="./img/icons/to_cart.svg" alt=""> </a>
+                    </div>
+                    <div class="item product-mini">
+                        <div class="img">
+                            <img src="./uploads/products/table1.png" alt="">
+                        </div>
+                        <div class="desc">
+                        <span>
+                            <p>Обідній овальний розкладний стіл з HPL</p>
+                            <span>11 499 ₴</span>
+                        </span>
+                        </div>
+                        <a href="" class="product-link" tabindex="0">перейти <img src="./img/icons/to_cart.svg" alt=""> </a>
+                    </div>
+                    <div class="item product-mini">
+                        <div class="img">
+                            <img src="./uploads/products/table1.png" alt="">
+                        </div>
+                        <div class="desc">
+                        <span>
+                            <p>Обідній овальний розкладний стіл з HPL</p>
+                            <span>11 499 ₴</span>
+                        </span>
+                        </div>
+                        <a href="" class="product-link" tabindex="0">перейти <img src="./img/icons/to_cart.svg" alt=""> </a>
+                    </div>
+                    <div class="item product-mini">
+                        <div class="img">
+                            <img src="./uploads/products/table1.png" alt="">
+                        </div>
+                        <div class="desc">
+                        <span>
+                            <p>Обідній овальний розкладний стіл з HPL</p>
+                            <span>11 499 ₴</span>
+                        </span>
+                        </div>
+                        <a href="" class="product-link" tabindex="0">перейти <img src="./img/icons/to_cart.svg" alt=""> </a>
+                    </div>
+                    <div class="item product-mini">
+                        <div class="img">
+                            <img src="./uploads/products/table1.png" alt="">
+                        </div>
+                        <div class="desc">
+                        <span>
+                            <p>Обідній овальний розкладний стіл з HPL</p>
+                            <span>11 499 ₴</span>
+                        </span>
+                        </div>
+                        <a href="" class="product-link" tabindex="0">перейти <img src="./img/icons/to_cart.svg" alt=""> </a>
+                    </div>
+                    <div class="item product-mini">
+                        <div class="img">
+                            <img src="./uploads/products/table1.png" alt="">
+                        </div>
+                        <div class="desc">
+                        <span>
+                            <p>Обідній овальний розкладний стіл з HPL</p>
+                            <span>11 499 ₴</span>
+                        </span>
+                        </div>
+                        <a href="" class="product-link" tabindex="0">перейти <img src="./img/icons/to_cart.svg" alt=""> </a>
+                    </div>
+                    <div class="item product-mini">
+                        <div class="img">
+                            <img src="./uploads/products/table1.png" alt="">
+                        </div>
+                        <div class="desc">
+                        <span>
+                            <p>Обідній овальний розкладний стіл з HPL</p>
+                            <span>11 499 ₴</span>
+                        </span>
+                        </div>
+                        <a href="" class="product-link" tabindex="0">перейти <img src="./img/icons/to_cart.svg" alt=""> </a>
+                    </div>
+                    <div class="item product-mini">
+                        <div class="img">
+                            <img src="./uploads/products/table1.png" alt="">
+                        </div>
+                        <div class="desc">
+                        <span>
+                            <p>Обідній овальний розкладний стіл з HPL</p>
+                            <span>11 499 ₴</span>
+                        </span>
+                        </div>
+                        <a href="" class="product-link" tabindex="0">перейти <img src="./img/icons/to_cart.svg" alt=""> </a>
+                    </div>
+                    <div class="item product-mini">
+                        <div class="img">
+                            <img src="./uploads/products/table1.png" alt="">
+                        </div>
+                        <div class="desc">
+                        <span>
+                            <p>Обідній овальний розкладний стіл з HPL</p>
+                            <span>11 499 ₴</span>
+                        </span>
+                        </div>
+                        <a href="" class="product-link" tabindex="0">перейти <img src="./img/icons/to_cart.svg" alt=""> </a>
+                    </div>
+                    <div class="item product-mini">
+                        <div class="img">
+                            <img src="./uploads/products/table1.png" alt="">
+                        </div>
+                        <div class="desc">
+                        <span>
+                            <p>Обідній овальний розкладний стіл з HPL</p>
+                            <span>11 499 ₴</span>
+                        </span>
+                        </div>
+                        <a href="" class="product-link" tabindex="0">перейти <img src="./img/icons/to_cart.svg" alt=""> </a>
+                    </div>
+                    <div class="item product-mini">
+                        <div class="img">
+                            <img src="./uploads/products/table1.png" alt="">
+                        </div>
+                        <div class="desc">
+                        <span>
+                            <p>Обідній овальний розкладний стіл з HPL</p>
+                            <span>11 499 ₴</span>
+                        </span>
+                        </div>
+                        <a href="" class="product-link" tabindex="0">перейти <img src="./img/icons/to_cart.svg" alt=""> </a>
+                    </div>
+                    <div class="item product-mini">
+                        <div class="img">
+                            <img src="./uploads/products/table1.png" alt="">
+                        </div>
+                        <div class="desc">
+                        <span>
+                            <p>Обідній овальний розкладний стіл з HPL</p>
+                            <span>11 499 ₴</span>
+                        </span>
+                        </div>
+                        <a href="" class="product-link" tabindex="0">перейти <img src="./img/icons/to_cart.svg" alt=""> </a>
+                    </div>
+                    <div class="item product-mini">
+                        <div class="img">
+                            <img src="./uploads/products/table1.png" alt="">
+                        </div>
+                        <div class="desc">
+                        <span>
+                            <p>Обідній овальний розкладний стіл з HPL</p>
+                            <span>11 499 ₴</span>
+                        </span>
+                        </div>
+                        <a href="" class="product-link" tabindex="0">перейти <img src="./img/icons/to_cart.svg" alt=""> </a>
+                    </div>
+
+                </div>
+
+                <div class="load-more full-w flex justify-center align-center">
+                    <a href="">ЗАВАНТАЖИТИ БІЛЬШЕ <img src="./img/icons/load_more.svg" alt=""></a>
+                </div>
+
+
+                <div class="pagination justify-center align-center flex full-w">
+                    <a href=""><img src="./img/icons/arrow_left_pagination.svg" alt=""></a>
+                    <div class="center">
+                        <a href="" class="active">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                        <a href="">4</a>
+                        <a href="">5</a>
+                    </div>
+                    <a href=""><img src="./img/icons/arrow_right_pagination.svg" alt=""></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="seo-text full-w">
+                    <p>
+                        "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+                        <br><br>
+                        "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="container-fluid">
+    <div class="container">
+        <div class="row footer-top">
+            <div class="col-md-4">
+                <a href="" class="logo"><img src="./img/icons/logo.svg" alt=""></a>
+                <p class="reserved">
+                    Starwood 2024 <br>
+                    © Усі права захищені
+                </p>
+
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="cat flex flex-column full-w">
+                            <h4>Каталог</h4>
+
+                            <a href="">Столи HPL</a>
+                            <a href="">Столи з епоксидної смоли</a>
+                            <a href="">Стільці</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="cat  flex flex-column full-w">
+                            <h4>Навігація</h4>
+
+                            <a href="">Про компанію</a>
+                            <a href="">Співпраця</a>
+                            <a href="">Обмін та повернення</a>
+                            <a href="">Блог</a>
+                            <a href="">Проекти</a>
+                            <a href="">Контакти</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cat-2 flex flex-column full-w">
+                    <a class="tel" href="tel:+380 96 123 45 67">+380 96 123 45 67</a>
+                    <a class="email" href="mailto:starwood@gmail.com">starwood@gmail.com</a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row footer-bottom">
+            <div class="col-md-4">
+                <div class="delivery full-w flex">
+                    <a href="">Оплата і доставка</a>
+                    <a href="">Оферта</a>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="visa flex full-w">
+                    <img src="./img/visa.png" alt="">
+                    <img src="./img/mastercard.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="soc flex full-w">
+                    <a href=""><img src="./img/icons/viber.svg" alt=""></a>
+                    <a href=""><img src="./img/icons/instagram2.svg" alt=""></a>
+                    <a href=""><img src="./img/icons/telegram2.svg" alt=""></a>
+                    <a href=""><img src="./img/icons/facebok.svg" alt=""></a>
+                    <a href=""><img src="./img/icons/youtube.svg" alt=""></a>
+                    <a href=""><img src="./img/icons/tiktok.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./js/slick.min.js"></script>
+<script>
+    // function toggleMenu() {
+    //     console.log(this)
+    //     var menu = document.querySelector('.prod-menu');
+    //     var menuList = document.querySelector('.prod-menu-list');
+    //
+    //     menuList.style.display = (menuList.style.display === 'none' || menuList.style.display === '')
+    //         ? 'block'
+    //         : 'none';
+    //
+    //     menu.classList.toggle('open');
+    // }
+
+    function toggleMenu(element) {
+        var menu = element.parentElement; // Находим родительский элемент (prod-menu)
+        var menuList = menu.querySelector('.prod-menu-list'); // Находим список внутри этого меню
+
+        menuList.style.display = (menuList.style.display === 'none' || menuList.style.display === '')
+            ? 'block'
+            : 'none';
+
+        menu.classList.toggle('open');
+    }
+
+
+    function toggleSortMenu() {
+        let sortOptions = document.querySelector('.sort-options');
+        sortOptions.classList.toggle('show');
+    }
+
+    function sortProducts(sortType) {
+        console.log("Выбрана сортировка:", sortType);
+
+        if (sortType === 'price-asc') {
+            console.log('Сортировка по цене: по возрастанию');
+        } else if (sortType === 'price-desc') {
+            console.log('Сортировка по цене: по убыванию');
+        } else if (sortType === 'name-asc') {
+            console.log('Сортировка по названию: А-Я');
+        } else if (sortType === 'name-desc') {
+            console.log('Сортировка по названию: Я-А');
+        }
+
+        let sortOptions = document.querySelector('.sort-options');
+        sortOptions.classList.remove('show');
+    }
+
+    // Закрытие меню при клике вне его области
+    window.onclick = function(event) {
+        if (!event.target.matches('.sort-btn')) {
+            var sortOptions = document.querySelector('.sort-options');
+            if (sortOptions.classList.contains('show')) {
+                sortOptions.classList.remove('show');
+            }
+        }
+    }
+</script>
+<script src="./js/index.js"></script>
+</body>
+</html>

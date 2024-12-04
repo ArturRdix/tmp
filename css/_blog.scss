@@ -1,0 +1,103 @@
+.blog-box {
+  .container {
+    padding-bottom: 50px;
+  }
+  h2.title {
+    font-family: 'gilroy';
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+  .blogs {
+    gap: 1.5%;
+
+    .b-item {
+      width: 32%;
+      height: 540px;
+      overflow: hidden;
+      border-radius: 30px;
+      background: #FFF;
+      margin-bottom: 25px;
+
+      .img {
+        width: 100%;
+        height: 270px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+
+      .desc {
+        width: 100%;
+        padding:15px 20px;
+
+        h5 {
+          font-family: 'gilroy';
+          font-size: 24px;
+          font-weight: 300;
+        }
+        p {
+          font-family: 'gilroy';
+          font-size: 15px;
+          font-weight: 300;
+        }
+      }
+
+      .read-more {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        a {
+          display: flex;
+          align-items: center;
+          color: #000000;
+          gap: 15px;
+          font-family: 'gilroy';
+          font-size: 15px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  .pagination {
+    justify-content: flex-end !important;
+  }
+}
+
+
+.blog-single {
+  .container {
+    padding-bottom: 200px;
+  }
+  .title {
+    font-family: 'gilroy';
+    font-weight: 500;
+    font-size: 36px;
+  }
+  .part {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .single-img {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+  .content {
+    p {
+      font-family: 'gilroy';
+      font-size: 15px;
+      font-weight: 300;
+    }
+  }
+}

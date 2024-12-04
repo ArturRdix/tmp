@@ -1,0 +1,62 @@
+.about {
+  height: 685px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background: url("../img/three.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+
+  .container {
+    height: inherit;
+
+    &>h4 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    .box {
+
+      .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-left: 50px;
+        width: 45%;
+        position: relative;
+
+        p {
+          font-size: 14px;
+          margin-bottom: 40px;
+          font-family: 'gilroy';
+          font-weight: 300;
+        }
+
+        &>h1 {
+          position: absolute;
+          left: -216px;
+          top: 40px;
+          font-size: 4em;
+          font-weight: bold;
+          color: rgba(173, 168, 161,0.5);
+          font-family: 'Heading';
+        }
+        .counter {
+          span {
+            font-size: 14px;
+          }
+          h2 {
+            font-weight: bold;
+            font-size: 2em;
+            text-align: center;
+            font-family: 'Heading';
+          }
+        }
+      }
+    }
+
+  }
+}

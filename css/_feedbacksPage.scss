@@ -1,0 +1,26 @@
+.feedbacks-page {
+  .container {
+    padding-bottom: 200px;
+  }
+  .fdb-title {
+    gap:45px;
+    h2 {
+      margin: 0;
+    }
+    button {
+      border:none;
+      background: #1E1E1E;
+      color: #FFF;
+      width: 185px;
+      font-family: 'gilroy';
+      height: 45px;
+      border-radius: 7px;
+      font-size: 14px;
+      font-weight: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+}

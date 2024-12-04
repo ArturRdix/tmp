@@ -1,0 +1,92 @@
+.menu {
+  height: 85px;
+  font-size: 14px;
+
+  a {
+    color:#000;
+    font-size: 14px;
+    font-family: 'gilroy';
+    font-weight: 100;
+  }
+  input {
+    color:#000;
+    font-size: 14px;
+    font-family: 'gilroy';
+    font-weight: 100;
+  }
+  .catalog {
+    gap: 5px;
+  }
+  .search {
+    position: relative;
+
+    input {
+      padding: 5px;
+      border: none;
+      outline: none;
+      background:$bgfill;
+      border-bottom: 1px solid #CCC;
+    }
+
+    button {
+      background: none;
+      border: none;
+      outline: none;
+      position: absolute;
+      right: 0;
+      top: 6px;
+    }
+  }
+
+  .tel {
+    gap: 5px;
+  }
+  .telegram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button {
+    padding:10px 5px;
+    background: $graybtn;
+    border-radius: 10px;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background: #1E1E1E;
+    }
+  }
+
+  .lang {
+    gap: 3px;
+  }
+  .soc {
+    gap: 5px;
+  }
+  .cart {
+    position: relative;
+    display: flex;
+    
+    .count {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #A28158;
+      color: #FFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: -12px;
+      top: -13px;
+    }
+  }
+}

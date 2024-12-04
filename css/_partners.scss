@@ -1,0 +1,45 @@
+.partners {
+  padding-top: 115px;
+  padding-bottom: 70px;
+  
+  .partners-content {
+    background: #F3F1F0;
+    height: 350px;
+    border-radius: 20px;
+
+    .left {
+      width: 50%;
+      align-items: flex-end;
+      justify-content: center;
+
+      h2 {
+        font-family: 'gilroy';
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 40px;
+      }
+      p{
+        font-family: 'gilroy';
+        font-weight: 100;
+      }
+
+      .cat-link {
+        background: #fafafa !important;
+        color: #A28158 !important;
+      }
+
+      &>div {
+        width: 70%;
+      }
+    }
+    .right {
+      width: 50%;
+      align-items: flex-end;
+      padding-left: 100px;
+
+      img {
+        height: 115%;
+      }
+    }
+  }
+}

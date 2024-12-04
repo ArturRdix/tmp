@@ -1,0 +1,112 @@
+header {
+  margin-top: 20px;
+
+  .container {
+    position: relative;
+
+    .buttons {
+      position: absolute;
+      right: 52px;
+      bottom: 27px;
+      gap: 10px;
+
+      .next1 {
+        background: none;
+        border:none;
+      }
+      .prev1 {
+        background: none;
+        border:none;
+      }
+    }
+
+  }
+  .carousel {
+    width: 100%;
+    height: auto;
+    background: #FFF;
+    border-radius: 40px;
+    overflow: hidden;
+
+    .slick-slide {
+      height: auto;
+      overflow: hidden;
+      position: relative;
+
+      .content {
+        width: 50%;
+        position: absolute;
+        z-index: 666;
+        right: 0;
+        top: 50%;
+        transform: translate(0,-50%);
+
+        .a {
+          text-transform: uppercase;
+          color: black;
+          font-family: 'Heading';
+          font-size: 100px;
+          width: 100%;
+          text-align: center;
+          margin: 0;
+          line-height: 1;
+        }
+        .b {
+          text-transform: uppercase;
+          color: transparent;
+          -webkit-text-stroke: 1px black;
+          font-family: 'Heading';
+          font-size: 100px;
+          width: 100%;
+          text-align: center;
+          margin: 0;
+          line-height: 1;
+        }
+        .btns {
+          gap:20px;
+          align-items: center;
+          height: 100px;
+          justify-content: flex-start;
+          p {
+            margin: 0;
+            font-family: 'gilroy';
+            font-weight: 300;
+          }
+
+          .cat-link {
+            margin: 0px;
+            height: 70px;
+            gap:17px;
+            border-radius: 20px;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .img {
+        height: auto;
+        width: 100%;
+      }
+      .link {
+        position: absolute;
+        z-index: 666;
+        left: 47px;
+        bottom: 25px;
+        
+        a {
+          text-transform: uppercase;
+          font-size: 14px;
+          font-family: 'gilroy';
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          color: #000;
+          gap: 5px;
+          img {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
